@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Coot | Creative Web/3D Developer</title>
+    <meta name="description" content="Portafolio 3D Inmersivo de Antonio Coot. Creative Web & 3D Developer.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Cursor custom -->
+    <div id="custom-cursor"></div>
+
+    <!-- FULLSCREEN MENU -->
+    <div id="menu-overlay">
+        <div class="menu-content">
+            <a href="#hero" class="menu-link glitch-on-hover" data-text="01. INICIO">01. INICIO</a>
+            <a href="#projects" class="menu-link glitch-on-hover" data-text="02. ARSENAL (Tajos)">02. ARSENAL</a>
+            <a href="#contact" class="menu-link glitch-on-hover" data-text="03. ENLACE (Contacto)">03. ENLACE</a>
+        </div>
+    </div>
+
+    <!-- 3D BACKGROUND -->
+    <div id="canvas-container"></div>
+
+    <nav class="navbar">
+        <div class="logo glitch" data-text="Antonio.Coot()">Antonio.Coot()</div>
+        <button id="menu-btn" class="glow-hover">[ MENU ]</button>
+    </nav>
+
+    <main class="content">
+        <section id="hero" class="hero brutalist-layout">
+            <div class="bg-watermark glitch" data-text="V.1.0_SPACE">V.1.0_SPACE</div>
+
+            <div class="hero-center-box">
+                <p class="hero-subtitle">-- ACCESO DIGITAL CONCEDIDO --</p>
+                <h1 class="hero-title glitch" data-text="CREATIVE DEVELOPER">
+                    CREATIVE DEVELOPER
+                </h1>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn brutal-btn">EXPLORAR REGISTROS</a>
+                </div>
+            </div>
+
+            <div class="model-hint brutal-hint">
+                <p>INICIAR SECUENCIA PARALLAX</p>
+                <div class="mouse-icon"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title glitch" data-text="ARCHIVOS CLASIFICADOS">ARCHIVOS CLASIFICADOS</h2>
+
+            <div class="brutalist-grid">
+                <!-- Tarjeta 1 - Grande -->
+                <a href="#projects" onclick="alert('DESENCRIPTANDO... Abriendo Archivo: Cyberpunk Cityscape');"
+                    class="project-card card-large">
+                    <div class="card-image bg-1">
+                        <div class="image-overlay"><span>[ ACCEDER ]</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cyberpunk Cityscape</h3>
+                        <p class="hacker-text">Nivel Auténtico: 09 // Simulación WebGL ultra pesada optimizada en
+                            Runtime.</p>
+                        <div class="tags-container">
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">Blender</span>
+                            <span class="tech-tag">GLSL</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Tarjeta 2 - Vertical Alta -->
+                <a href="#projects" onclick="alert('DESENCRIPTANDO... Abriendo Archivo: Vaporwave Configurator');"
+                    class="project-card card-tall">
+                    <div class="card-image bg-2">
+                        <div class="image-overlay"><span>[ ACCEDER ]</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vaporwave Configurator</h3>
+                        <p class="hacker-text">Manipulación de nodos de texturas e iluminación volumétrica.</p>
+                        <div class="tags-container">
+                            <span class="tech-tag">WebGL</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Tarjeta 3 - Ancha offset -->
+                <a href="#projects" onclick="alert('DESENCRIPTANDO... Abriendo Archivo: Holographic Toolkit');"
+                    class="project-card card-wide offset-card">
+                    <div class="card-image bg-3">
+                        <div class="image-overlay"><span>[ ACCEDER ]</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Holographic Toolkit V2</h3>
+                        <p class="hacker-text">Interfaz fractal basada en Glassmorphism y matemáticas puras.</p>
+                        <div class="tags-container">
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">GSAP API</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-card neon-pulse">
+                <h2 class="glitch" data-text="TRANSMISIÓN INTRANET">TRANSMISIÓN INTRANET</h2>
+                <div class="barcode">|||| |||||| | |||||||||| |||||</div>
+                <p class="hacker-text">SEÑAL RECIBIDA. ESPERANDO RESPUESTA DEL CLIENTE...</p>
+                <a href="mailto:contacto@antoniocoot.dev" class="btn brutal-btn glowing-contact">ENVIAR PAQUETE
+                    @antoniocoot.dev</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Antonio Coot // SISTEMA CERRADO</p>
+        </footer>
+    </main>
+
+    <!-- Import Map para Three.js y addons CDN -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
